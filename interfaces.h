@@ -2,12 +2,7 @@
 #define INTERFACES_H
 
 
-class less21
-{
-public:
-    less21();
-    void say();
-};
+                                        //Lesson 113. Interfaces.
 
 class Icar
 {

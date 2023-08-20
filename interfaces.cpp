@@ -2,16 +2,11 @@
 #include <iostream>
 using namespace std;
 
-less21::less21()
-{
 
-}
-void less21::say()
-{
-    std::cout<<"qwwerry<<endl";
-}
 
-void driver::drive(Icar &car)
+                                                            //Lesson 113. Interfaces.
+
+void driver::drive(Icar &car)                               //char "I" after class "car" says that this is from interfaces.
 {
     cout<<endl<<"drive the car"<<endl;
     car.drive_the_car();

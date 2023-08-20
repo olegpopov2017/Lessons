@@ -7,8 +7,8 @@ using namespace std;
 int main()
 {
     cout << "Hello World!" << endl;
-    less21 ls;
-    ls.say();
+                                                            //Branch "lessons_SimppleCode
+                                                            //Lesson 113. Interfaces.
     driver d;
     BMW b;
     d.drive(b);
