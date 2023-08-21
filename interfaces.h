@@ -64,3 +64,6 @@ public:
 };
 
                                                             //Lesson 120. Processing exeptions "TRY and CATCH.Function Throw".
+                                                            //Lesson 121.Generating personal exceptions with own class exceprion.
+
+void show_int(int integer);

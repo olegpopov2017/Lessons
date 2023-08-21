@@ -72,4 +72,13 @@ Car::Car()
     cout<<endl<<"Calling constructor of CAR"<<endl;
 }
 
-                                                            //Lesson 120. Processing exeptions "TRY and CATCH.Function Throw".
+                                                            //Lesson 121. Processing exeptions "TRY and CATCH.Function Throw".
+void show_int(int integer)
+{
+    if(integer<0)
+    {
+
+        throw "Your integer is less the zero.";
+    }
+    cout<<endl<<integer<<endl;
+}
