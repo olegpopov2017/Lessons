@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    cout << "Hello World!!" << endl;
 
                                                             //GIT Branch "lessons_SimppleCode".
    /*                                                       //Lesson 113. Interfaces.
@@ -43,7 +43,7 @@ int main()
    }
  */
 
-                                                            //Lesson 121.Generating personal exceptions with own class exceprion.
+   /*                                                       //Lesson 121.Generating personal exceptions with own class exceprion.
     try
     {
         show_int(-8);
@@ -52,7 +52,7 @@ int main()
     {
         cout<<endl<<"Sorry but nuber is not matched statement integer>0 "<<endl<<ex<<endl;
     }
-
+    */
 
 
 
