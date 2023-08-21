@@ -62,3 +62,5 @@ class Car : public Engine , public Gearbox
 public:
     Car();
 };
+
+                                                            //Lesson 120. Processing exeptions "TRY and CATCH.Function Throw".

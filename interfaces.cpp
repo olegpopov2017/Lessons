@@ -71,3 +71,5 @@ Car::Car()
 {
     cout<<endl<<"Calling constructor of CAR"<<endl;
 }
+
+                                                            //Lesson 120. Processing exeptions "TRY and CATCH.Function Throw".
