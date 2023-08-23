@@ -1,13 +1,9 @@
 #ifndef INTERFACES_H
 #define INTERFACES_H
-
-
-class less21
-{
-public:
-    less21();
-    void say();
-};
+#include <string>
+#include <iostream>
+using namespace std;
+                                                        //Lesson 113. Interfaces.
 
 class Icar
 {
@@ -31,3 +27,43 @@ public:
 };
 
 #endif // INTERFACES_H
+
+
+                                                            //Lesson 114. Virtual and romboid inheriance.
+class Detail
+{
+public:
+    Detail();
+    string factory_name;
+    void show_factory_name();
+};
+
+
+
+class Engine :public virtual Detail
+{
+public:
+    Engine();
+    void show_power();
+    int Power;
+
+};
+
+class Gearbox : public virtual Detail
+{
+public:
+    Gearbox();
+    void show_current_gear();
+    int Gear;
+};
+
+class Car : public Engine , public Gearbox
+{
+public:
+    Car();
+};
+
+                                                            //Lesson 120. Processing exeptions "TRY and CATCH.Function Throw".
+                                                            //Lesson 121.Generating personal exceptions with own class exceprion.
+
+void show_int(int integer);
