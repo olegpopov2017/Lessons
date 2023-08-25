@@ -77,8 +77,15 @@ void show_int(int integer)
 {
     if(integer<0)
     {
-
         throw "Your integer is less the zero.";
+    }
+    if (integer == 0)
+    {
+        throw "Your integer is zero!!!";
+    }
+    if (integer == 1)
+    {
+        throw 1;
     }
     cout<<endl<<integer<<endl;
 }

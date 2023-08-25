@@ -12,6 +12,7 @@ int main()
     cout << "Hello World!!!" << endl;
 
                                                             //GIT Branch "lessons_SimppleCode".
+
    /*                                                       //Lesson 113. Interfaces.
     driver d;
     BMW b;
@@ -26,7 +27,7 @@ int main()
     g.show_power();
     */
 
-   /*                                                       //Lesson 120. Processing exeptions "TRY and CATCH.Function Throw".
+   /*                                                       //Lesson 120. Processing exceptions "TRY and CATCH.Function Throw".
    string path_to_file = "/home/oleg/programming/QT_projects/Lessons/test_file.txt";
    ifstream file;
    file.exceptions(ifstream::badbit | ifstream::failbit);
@@ -43,16 +44,21 @@ int main()
    }
  */
 
-   /*                                                       //Lesson 121.Generating personal exceptions with own class exceprion.
+                                                          //Lesson 121.Generating personal exceptions with own class exceprion.
+                                                          //Lesson 122.Creaiting multiple blocks CATCH.Processing execptions.
     try
     {
-        show_int(-8);
+        show_int(1);
     }
-    catch (const string &ex)
+    catch (const char *ex)
     {
         cout<<endl<<"Sorry but nuber is not matched statement integer>0 "<<endl<<ex<<endl;
     }
-    */
+    catch(...)
+    {
+        cout<<endl<<"Sorry but your exception is undefinded."<<endl;
+    }
+
 
 
 
