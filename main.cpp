@@ -3,7 +3,7 @@
 #include <string>
 #include <fstream>
 
-using namespace std;
+//using namespace std;
 
 
 
@@ -44,21 +44,24 @@ int main()
    }
  */
 
-                                                          //Lesson 121.Generating personal exceptions with own class exceprion.
-                                                          //Lesson 122.Creaiting multiple blocks CATCH.Processing execptions.
-    try
-    {
-        show_int(1);
-    }
-    catch (const char *ex)
-    {
-        cout<<endl<<"Sorry but nuber is not matched statement integer>0 "<<endl<<ex<<endl;
-    }
-    catch(...)
-    {
-        cout<<endl<<"Sorry but your exception is undefinded."<<endl;
-    }
-
+                                                            //Lesson 121.Generating personal exceptions with own class exceprion.
+                                                            //Lesson 122.Creaiting multiple blocks CATCH.Processing execptions./*
+                                                            //lesson 123. Creating personal class "MyExceptions" for own exceptions.
+                                                                //Dont pass this lesson.Compiler throw error.
+{
+//    try
+//    {
+//        show_int(1);
+//    }
+//    catch (const char *ex)
+//    {
+//        cout<<endl<<"Sorry but nuber is not matched statement integer>0 "<<endl<<ex<<endl;
+//    }
+//    catch(...)
+//    {
+//        cout<<endl<<"Sorry but your exception is undefinded."<<endl;
+//    }
+}
 
 
 
