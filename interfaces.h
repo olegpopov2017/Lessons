@@ -105,4 +105,11 @@ enum Speed
     max = 200
 };
 
+                                                            //Lesson 125.Creating own NAMESPACE.
+
+
+
+
+
+
 

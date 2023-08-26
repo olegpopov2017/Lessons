@@ -5,6 +5,18 @@
 
 //using namespace std;
 
+                                                            //Lesson 125.Creating own namespaces.
+namespace ns1
+{
+void ns10(){cout<<endl<<"NS1"<<endl;}
+}
+
+namespace ns2
+{
+void ns20(){cout<<endl<<"NS2"<<endl;}
+}
+
+
 
 
 int main()
@@ -64,32 +76,36 @@ int main()
 }
                                                             //Lesson 124.Creating data type "ENUM".
     {
-    PC pc;
-    pc.SetState(PC::EnumPC::ON);
-    std::cout<<std::endl<<pc.Getstate()<<std::endl;
-    if(pc.Getstate()== PC::EnumPC::ON || pc.Getstate() == PC::EnumPC::SLEEP )
-    {
-      std::cout<<std::endl<<"Computer power is ON"<<std::endl;
-    };
-    switch (pc.Getstate())
-        {
-        case PC::EnumPC::OFF:
-        cout<<endl<<"Your computer is off"<<endl;
-        break;
+//    PC pc;
+//    pc.SetState(PC::EnumPC::ON);
+//    std::cout<<std::endl<<pc.Getstate()<<std::endl;
+//    if(pc.Getstate()== PC::EnumPC::ON || pc.Getstate() == PC::EnumPC::SLEEP )
+//    {
+//      std::cout<<std::endl<<"Computer power is ON"<<std::endl;
+//    };
+//    switch (pc.Getstate())
+//        {
+//        case PC::EnumPC::OFF:
+//        cout<<endl<<"Your computer is off"<<endl;
+//        break;
 
-        case PC::EnumPC::ON:
-        cout<<endl<<"Your computer is ON"<<endl;
-        break;
+//        case PC::EnumPC::ON:
+//        cout<<endl<<"Your computer is ON"<<endl;
+//        break;
 
-        case PC::EnumPC::SLEEP:
-        cout<<endl<<"Your computer is SLEEP"<<endl;
-        break;
-        }
-    Speed car;
-    car = Speed::max;
-    cout<<endl<<car<<endl;
+//        case PC::EnumPC::SLEEP:
+//        cout<<endl<<"Your computer is SLEEP"<<endl;
+//        break;
+//        }
+//    Speed car;
+//    car = Speed::max;
+//    cout<<endl<<car<<endl;
     }
-
+                                                            //Lesson 125.Creating own namespace.
+    {
+//        ns1::ns10();
+//        ns2::ns20();
+    }
 
 return 0;
 
