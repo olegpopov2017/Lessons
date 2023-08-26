@@ -64,6 +64,45 @@ public:
 };
 
                                                             //Lesson 120. Processing exeptions "TRY and CATCH.Function Throw".
-                                                            //Lesson 121.Generating personal exceptions with own class exceprion.
+                                                            //Lesson 121. Generating personal exceptions with own class exceprion.
 
 void show_int(int integer);
+                                                            //Lesson 124. Creating data type "ENUM".
+
+enum EnumPC
+{
+    ON,
+    OFF,
+    SLEEP
+};
+
+class PC
+{
+public:
+    enum EnumPC
+    {
+        ON,
+        OFF,
+        SLEEP
+    };
+
+    EnumPC Getstate()
+    {
+        return  state;
+    };
+    void SetState(EnumPC state)
+    {
+        this->state = state;
+    };
+private:
+    EnumPC state;
+};
+
+enum Speed
+{
+    min = 60,
+    normal = 110,
+    max = 200
+};
+
+

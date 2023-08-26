@@ -9,9 +9,9 @@
 
 int main()
 {
-    cout << "Hello World!!!" << endl;
+    std::cout << "Hello World!!!" <<std::endl;
 
-                                                            //GIT Branch "lessons_SimppleCode".
+                                                            //GIT Branch "/Lessons/lscpp".
 
    /*                                                       //Lesson 113. Interfaces.
     driver d;
@@ -62,11 +62,36 @@ int main()
 //        cout<<endl<<"Sorry but your exception is undefinded."<<endl;
 //    }
 }
+                                                            //Lesson 124.Creating data type "ENUM".
+    {
+    PC pc;
+    pc.SetState(PC::EnumPC::ON);
+    std::cout<<std::endl<<pc.Getstate()<<std::endl;
+    if(pc.Getstate()== PC::EnumPC::ON || pc.Getstate() == PC::EnumPC::SLEEP )
+    {
+      std::cout<<std::endl<<"Computer power is ON"<<std::endl;
+    };
+    switch (pc.Getstate())
+        {
+        case PC::EnumPC::OFF:
+        cout<<endl<<"Your computer is off"<<endl;
+        break;
+
+        case PC::EnumPC::ON:
+        cout<<endl<<"Your computer is ON"<<endl;
+        break;
+
+        case PC::EnumPC::SLEEP:
+        cout<<endl<<"Your computer is SLEEP"<<endl;
+        break;
+        }
+    Speed car;
+    car = Speed::max;
+    cout<<endl<<car<<endl;
+    }
 
 
+return 0;
 
-
-
-    return 0;
 }
 

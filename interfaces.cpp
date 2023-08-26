@@ -1,7 +1,7 @@
 #include "interfaces.h"
 #include <iostream>
 #include <string>
-//using namespace std;
+using namespace std;
 
 
 
@@ -88,5 +88,7 @@ void show_int(int integer)
     }
     cout<<endl<<integer<<endl;
 }
+                                                            //Lesson 124. Creating data type "ENUM".
+
 
 
