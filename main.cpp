@@ -3,15 +3,15 @@
 #include <string>
 #include <fstream>
 
-using namespace std;
+//using namespace std;
 
 
 
 int main()
 {
-    cout << "Hello World!!!" << endl;
+    std::cout << "Hello World!!!" <<std::endl;
 
-                                                            //GIT Branch "lessons_SimppleCode".
+                                                            //GIT Branch "/Lessons/lscpp".
 
    /*                                                       //Lesson 113. Interfaces.
     driver d;
@@ -44,26 +44,54 @@ int main()
    }
  */
 
-                                                          //Lesson 121.Generating personal exceptions with own class exceprion.
-                                                          //Lesson 122.Creaiting multiple blocks CATCH.Processing execptions.
-    try
+                                                            //Lesson 121.Generating personal exceptions with own class exceprion.
+                                                            //Lesson 122.Creaiting multiple blocks CATCH.Processing execptions./*
+                                                            //lesson 123. Creating personal class "MyExceptions" for own exceptions.
+                                                                //Dont pass this lesson.Compiler throw error.
+{
+//    try
+//    {
+//        show_int(1);
+//    }
+//    catch (const char *ex)
+//    {
+//        cout<<endl<<"Sorry but nuber is not matched statement integer>0 "<<endl<<ex<<endl;
+//    }
+//    catch(...)
+//    {
+//        cout<<endl<<"Sorry but your exception is undefinded."<<endl;
+//    }
+}
+                                                            //Lesson 124.Creating data type "ENUM".
     {
-        show_int(1);
-    }
-    catch (const char *ex)
+    PC pc;
+    pc.SetState(PC::EnumPC::ON);
+    std::cout<<std::endl<<pc.Getstate()<<std::endl;
+    if(pc.Getstate()== PC::EnumPC::ON || pc.Getstate() == PC::EnumPC::SLEEP )
     {
-        cout<<endl<<"Sorry but nuber is not matched statement integer>0 "<<endl<<ex<<endl;
+      std::cout<<std::endl<<"Computer power is ON"<<std::endl;
+    };
+    switch (pc.Getstate())
+        {
+        case PC::EnumPC::OFF:
+        cout<<endl<<"Your computer is off"<<endl;
+        break;
+
+        case PC::EnumPC::ON:
+        cout<<endl<<"Your computer is ON"<<endl;
+        break;
+
+        case PC::EnumPC::SLEEP:
+        cout<<endl<<"Your computer is SLEEP"<<endl;
+        break;
+        }
+    Speed car;
+    car = Speed::max;
+    cout<<endl<<car<<endl;
     }
-    catch(...)
-    {
-        cout<<endl<<"Sorry but your exception is undefinded."<<endl;
-    }
 
 
+return 0;
 
-
-
-
-    return 0;
 }
 

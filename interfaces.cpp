@@ -28,7 +28,7 @@ void BMW::stop_the_car()
 {
     cout<<endl<<"BMW stop!!!"<<endl;
 }
-                                                        //Lesson 114.Virtual and romboid inheriance.
+                                                             //Lesson 114.Virtual and romboid inheriance.
 
 void Detail::show_factory_name()
 {
@@ -41,15 +41,11 @@ Detail::Detail()
     factory_name = "tver";
 }
 
-
-
-
 Engine::Engine()
 {
     cout<<endl<<"Calling constructor Engine"<<endl;
     Power = 0;
 }
-
 
 void Engine::show_power()
 {
@@ -73,6 +69,9 @@ Car::Car()
 }
 
                                                             //Lesson 121. Processing exeptions "TRY and CATCH.Function Throw".
+                                                            //Lesson 122.Creaiting multiple blocks CATCH.Processing execptions.
+                                                            //Lesson 123.Creating personal class "MyExceptions" for own exceptions.
+                                                                //Dont pass lesson 123.Compiler throw error.
 void show_int(int integer)
 {
     if(integer<0)
@@ -89,3 +88,7 @@ void show_int(int integer)
     }
     cout<<endl<<integer<<endl;
 }
+                                                            //Lesson 124. Creating data type "ENUM".
+
+
+
